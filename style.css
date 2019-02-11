@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+ul{
+  font-family: 'Lato';
+  list-style-t.wizard  ype: none;
+}
+ul.wizard li {
+  display: inline-block;
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  transition: all 0.4s ease;
+  text-indent: 1rem;
+}
+ul.wizard li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+ul.wizard li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+ul.wizard li:last-child:after, ul li:last-child:before {
+  display: none;
+}
+ul.wizard li:after, ul li:before {
+  content: "";
+  position: absolute;
+  background-color: #cccccc;
+}
+ul.wizard li:after {
+  border-radius: 3px;
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  height: 1.9rem;
+  width: 1.9rem;
+  margin-top: -0.45rem;
+  margin-left: 1rem;
+  -webkit-transform: rotate(45deg);
+}
+ul.wizard li.current {
+  background-color: #608900;
+}
+ul.wizard li.current:after, ul li.current:before {
+  background-color: #608900;
+}
+ul.wizard li.completed {
+  background-color: #84BC00;
+}
+ul.wizard li.completed:after, ul li.completed:before {
+  background-color: #84BC00;
+}
